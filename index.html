@@ -22,10 +22,10 @@
                 text-align: center;
                 border: none;
                 border-radius: 5px;
-                transition: transform 0.3s ease;
+                transition: transform 0.3s ease, font-weight 0.3s ease; /* Add font-weight transition */
                 overflow: hidden; /* Ensures the pseudo-element does not extend outside the button */
             }
-
+        
             .vertical-btn::before {
                 content: ""; /* Required for pseudo-elements */
                 position: absolute;
@@ -37,26 +37,29 @@
                 border-radius: 5px; /* Match the button's border-radius */
                 z-index: 0; /* Ensures the overlay is behind the button text */
             }
-
+        
             .vertical-btn span {
                 position: relative; /* Makes text appear above the overlay */
                 z-index: 1;
+                transition: font-weight 0.3s ease; /* Smooth transition for font-weight */
             }
-
+        
+            .vertical-btn:hover, .vertical-btn:hover span {
+                transform: scale(1.05); /* Applies scaling to the button */
+                font-weight: bold; /* Makes text bold */
+                color: white; /* Keeps text color white */
+                text-decoration: none; /* Prevents text decoration */
+            }
+        
             .vertical-btn:last-child {
                 margin-bottom: 0;
-            }
-
-            .vertical-btn:hover {
-                transform: scale(1.05);
-                text-decoration: none;
             }
         </style>
 
     </head>
-
-
-    <body>
+<!-- ==================================================-->
+<!-- ==================================================-->
+<body>
         <!-- Responsive navbar-->
         <header class="sticky-top shadow">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -75,7 +78,7 @@
             </nav>
         </header>
 
-
+ 
         <!-- Page Content-->
         <div class="container px-4 px-lg-5">
             <!-- Heading Row -->
@@ -84,12 +87,12 @@
                 <div class="col-lg-4">
                     <h1 class="font-weight-light">Lorentz Yeung</h1>
                     <p>Worked with Microsoft as Data Analyst / AI Certificate (Harvard University) / MSc in Digital Marketing / GC in Art History / Bachelor in Economics / </p>
-                    <a class="btn text-white btn-dark" href="https://www.linkedin.com/in/lorentzyeung/" target="_blank">Check Out My Linkedin</a>
+                    <a class="btn text-white btn-dark" href='assets/front/commercials.png' target="_blank">Back To Front Page</a>
                 </div>
                 <!-- New column for vertical buttons -->
                 <div class="col-lg-8 d-flex flex-column justify-content-between">
-                    <a href="page1.html" class="btn vertical-btn" style="background-image: url('assets/front/commercials.png');"><span>Commerical</span></a>
-                    <a href="page2.html" class="btn vertical-btn" style="background-image: url('assets/front/LLM.png');"><span>LLM & NLP</span></a>
+                    <a href="page1.html" class="btn vertical-btn" style="background-image: url('assets/front/commercials.png');"><span>Commerical Projects</span></a>
+                    <a href="page2.html" class="btn vertical-btn" style="background-image: url('assets/front/LLM.png');"><span>LLM & NLP Projects</span></a>
                     <a href="side_projects.html" class="btn vertical-btn" style="background-image: url('assets/front/side_projects.png');"><span>Side Projects</span></a>
                 </div>
 
@@ -97,7 +100,8 @@
             <!-- Content Row-->
 
 
-
+<!-- ==================================================-->
+<!-- ==================================================-->
                 <p></p>
                 <p></p>
                 <p></p>
@@ -147,6 +151,8 @@
             </div>
         </div>
 
+<!-- ==================================================-->
+<!-- ==================================================-->
 
         <!-- Footer-->
         <footer class="py-5 bg-dark">
