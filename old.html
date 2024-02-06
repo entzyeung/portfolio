@@ -9,57 +9,11 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <!-- additional style for easy twist)-->
-        <style>
-            .vertical-btn {
-                position: relative; /* Needed for absolute positioning of the pseudo-element */
-                background-size: cover;
-                background-position: center;
-                color: white;
-                display: block;
-                margin-bottom: 5px;
-                padding: 23px;
-                text-align: center;
-                border: none;
-                border-radius: 5px;
-                transition: transform 0.3s ease, font-weight 0.3s ease; /* Add font-weight transition */
-                overflow: hidden; /* Ensures the pseudo-element does not extend outside the button */
-            }
-        
-            .vertical-btn::before {
-                content: ""; /* Required for pseudo-elements */
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay; adjust as needed */
-                border-radius: 5px; /* Match the button's border-radius */
-                z-index: 0; /* Ensures the overlay is behind the button text */
-            }
-        
-            .vertical-btn span {
-                position: relative; /* Makes text appear above the overlay */
-                z-index: 1;
-                transition: font-weight 0.3s ease; /* Smooth transition for font-weight */
-            }
-        
-            .vertical-btn:hover, .vertical-btn:hover span {
-                transform: scale(1.05); /* Applies scaling to the button */
-                font-weight: bold; /* Makes text bold */
-                color: white; /* Keeps text color white */
-                text-decoration: none; /* Prevents text decoration */
-            }
-        
-            .vertical-btn:last-child {
-                margin-bottom: 0;
-            }
-        </style>
 
     </head>
-<!-- ==================================================-->
-<!-- ==================================================-->
-<body>
+
+
+    <body>
         <!-- Responsive navbar-->
         <header class="sticky-top shadow">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -78,30 +32,32 @@
             </nav>
         </header>
 
- 
+
         <!-- Page Content-->
         <div class="container px-4 px-lg-5">
-            <!-- Heading Row -->
-            <!-- Heading Row -->
-            <div class="row gx-4 gx-lg-5 align-items-stretch my-5">
-                <div class="col-lg-4">
+            <!-- Heading Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/cover.png" alt="..." /></div>
+                <div class="col-lg-5">
                     <h1 class="font-weight-light">Lorentz Yeung</h1>
-                    <p>Worked with Microsoft as Data Analyst / AI Certificate (Harvard University) / MSc in Digital Marketing / GC in Art History / Bachelor in Economics / </p>
-                    <a class="btn text-white btn-dark" href='index.html'>Back To Front Page</a>
+                    <p>ex Microsoft Data Analyst / AI Certificate (Harvard University) / MSc in Digital Marketing / GC in Art History / Bachelor in Applied Economics / </p>
+                    <a class="btn text-white btn-dark" href="https://www.linkedin.com/in/lorentzyeung/" target="_blank">Check Out My CV in Linkedin</a>
                 </div>
-                <!-- New column for vertical buttons -->
-                <div class="col-lg-8 d-flex flex-column justify-content-between">
-                    <a href="commercial_projects.html" class="btn vertical-btn" style="background-image: url('assets/front/commercials.png');"><span>Commerical Projects</span></a>
-                    <a href="LLM_NLP_projects.html" class="btn vertical-btn" style="background-image: url('assets/front/LLM.png');"><span>LLM & NLP Projects</span></a>
-                    <a href="side_projects.html" class="btn vertical-btn" style="background-image: url('assets/front/side_projects.png');"><span>Side Projects</span></a>
+            </div>
+            <!-- Call to Action-->
+            <div class="card text-white bg-secondary my-5 py-4 text-center">
+                <div class="card-body"><p class="text-white m-0">&#9312 This portfolio is data science focused.</p></div>
+                <div class="container">
+                    <div class="row-cols-10">
+                        <a class="btn btn-primary btn-sm" href="https://docs.google.com/presentation/d/16UIRTAKCKHJOh9jgQ_y1Sq7Pw8vjtztW6BSxb_M3TYA/edit#slide=id.g220ac09aaf8_0_659" target="_blank">Check out my latest project by clicking here.</a>
+                    </div>
                 </div>
-            <p></p>
-            <p></p>
+            </div>
 
 
-<!-- ======================================== Content Rows =========================================-->
-<!-- ======================================== Content Rows =========================================-->
+            <!-- Content Row-->
             <div class="row gx-4 gx-lg-5">
+
 
                 <!--============================= 1.1 =============================-->
                 <div class="col-md-4 mb-5">
@@ -109,7 +65,7 @@
                         <div class="card-body">
                             <h2 class="card-title">AI Certificate from Harvard University<br></h2>
                             <p class="date">May 2021</p>
-                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/side_projects/Harvard_AI.png" alt="Harvard AI" /></div>
+                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/Harvard_AI.png" alt="Harvard AI" /></div>
                             <p class="card-text">It was awarded by the HarvardX of Harvard University. Topics covered are: 
                                 probability theory, Bayesian networks, Markov models, machine learning, neural networks, and natural language processing. <br>
                                 The view link below goes to: https://cs50.harvard.edu/certificates/
@@ -126,10 +82,10 @@
                         <div class="card-body">
                             <h2 class="card-title">Ranked 7 in a Kaggle Community Competition<br></h2>
                             <p class="date">June 2022</p>
-                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/side_projects/Kaggle.png" alt="Kaggle Competition" /></div>
+                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/Kaggle.png" alt="Kaggle Competition" /></div>
                             <p class="card-text">My submission of a classification model finally ranked 7th in the competition. I have another late submission scored even higher and is on par with the first runner up. </p>
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="assets/side_projects/Kaggle_Competition.png" target="_blank">More Info</a></div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="assets/Kaggle_Competition.png" target="_blank">More Info</a></div>
                     </div>
                 </div>
 
@@ -140,7 +96,7 @@
                         <div class="card-body"> 
                             <h2 class="card-title">Built a serverless ML model<br></h2>
                             <p class="date">July 2022</p>
-                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/side_projects/Buying Used Cars In A Smart Way.png" alt="Logistic Regression & Gradient Boost" /></div>
+                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/Buying Used Cars In A Smart Way.png" alt="Logistic Regression & Gradient Boost" /></div>
                             <p></p>
                             <p class="card-text">A serverless deployment of my machine learning model with PyScript. The model was built on Xgboost,
                                 but is finally deployed with Logistic Regression, and Gradient Boost because PyScript doesn't support Xgboost.
@@ -161,7 +117,7 @@
                         <div class="card-body">
                             <h2 class="card-title">Automated trade signal generation model with daily web-scraping and sentiment analysis for Algo-trade<br></h2>
                             <p class="date">November 2021 til now</p>
-                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/side_projects/algo-trade.png" alt="Automated Algo-trade model with daily web-scraping and sentiment analysis" /></div>
+                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/algo-trade.png" alt="Automated Algo-trade model with daily web-scraping and sentiment analysis" /></div>
                             <p> </p>
                             <p class="card-text">A complicated Algo-trade project with web scraping, server creation, data fetching, sentiment analysis,
                                 model creation, server maintenance and risk management, subscriber external database update, sending out daily trade-signal notification emails, etc.
@@ -170,7 +126,7 @@
                         </div>
                         <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://docs.google.com/presentation/d/16UIRTAKCKHJOh9jgQ_y1Sq7Pw8vjtztW6BSxb_M3TYA/edit#slide=id.g220ac09aaf8_0_617" target="_blank">Click to view the white paper</a></div>
                         <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://docs.google.com/forms/d/1Dj1L7xkUyTZ5P8dfEsHi9fGs4rI5MWejpuiz4a5G4Xk/edit?pli=1" target="_blank">sign up for a daily email notification</a></div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="assets/side_projects/trader sentiment and stock price analysis.png" target="_blank">A snapshot of the model</a></div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="assets/trader sentiment and stock price analysis.png" target="_blank">A snapshot of the model</a></div>
                     </div>
                 </div>
 
@@ -181,7 +137,7 @@
                         <div class="card-body">
                             <h2 class="card-title">Generative Stable Diffusion model with modern UI<br></h2>
                             <p class="date">October 2022</p>
-                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/side_projects/ironman-Goku.png" alt="Generative model with text to image function - Iron + Goku" /></div>
+                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/ironman-Goku.png" alt="Generative model with text to image function - Iron + Goku" /></div>
                             <p> </p>
                             <p class="card-text">I developed a web app with generative Stable Diffusion model and tkinter.  It allows you to type in a prompt into the text box 
                                 and have an image generated. The avatar above is Goku plus Ironman.
@@ -204,14 +160,14 @@
                         <div class="card-body">
                             <h2 class="card-title">NLP article analysis with FastAPI<br></h2>
                             <p class="date">September 2022</p>
-                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/side_projects/FastAPI.png" alt="Fast API" /></div>
+                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/FastAPI.png" alt="Fast API" /></div>
                             <p class="card-text">A deployment of my NLP model to Deta. The model was built with spaCy, and FastAPI.
                                 spaCy comes with prebuilt statistical neural network NLP models. I used it for the small size, otherwise it won't fit Deta's space requirement.
                                 Please click the button below to download my notebook file for trial. Right click to save if the download button won't work.
                             </p>
                         </div>
                         <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://nlp_api.deta.dev/docs" target="_blank">FastAPI location</a></div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="assets/side_projects/FastAPI_trial.ipynb" download target="_blank">Download my notebook and test</a></div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="assets/FastAPI_trial.ipynb" download target="_blank">Download my notebook and test</a></div>
                     </div>
                 </div>
 
@@ -222,7 +178,7 @@
                         <div class="card-body">
                             <h2 class="card-title">Automated monthly London property price analysis<br></h2>
                             <p class="date">March 2022 til now</p>
-                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/side_projects/London property price analysis.png" alt="london property price analysis" /></div>
+                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/London property price analysis.png" alt="london property price analysis" /></div>
                             <p> </p>
                             <p class="card-text">The reports are for the HongKonger community, and the process is totally automated with Python. Processes included but no limited to are, data cleaning, data manipulation, 
                                 data visualization, text composition, insights generation, and PDF generation. A link
@@ -242,76 +198,25 @@
                         <div class="card-body">
                             <h2 class="card-title">Automated top 20 Google keywords for Microsoft EMEA data analysts.<br></h2>
                             <p class="date">February 2022 til now</p>
-                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/side_projects/top20Keywords_google.png" alt="Automated top 20 daily Google keywords " /></div>
+                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/top20Keywords_google.png" alt="Automated top 20 daily Google keywords " /></div>
                             <p> </p>
                             <p class="card-text">Each day top 20 most searched Google keywords in major countries, e.g. UK, US, JPN, etc are fetched and stored into my own managed server. I made it open for Microsoft teammates free subscription. 
                                 Each subscriber will get a CSV file monthly through his/her subscription email. Let me know if you are interested.
                             </p>
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="assets/side_projects/top20Keywords_subscription.png" target="_blank">The automated email for the subscribers </a></div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="assets/side_projects/top20Keywords.png" target="_blank">A snapshot of the database</a></div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="assets/top20Keywords_subscription.png" target="_blank">The automated email for the subscribers </a></div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="assets/top20Keywords.png" target="_blank">A snapshot of the database</a></div>
                     </div>
                 </div>
 
 
 
-<!-- ==================================================-->
-<!-- ==================================================-->
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
 
-
-                <div class="container">
-                    <div class="contant-section" id="form">
-                        <h2 class="h3 text mb-3">Request More Info</h2>
-                        <div class="row">
-                            <div class="col-md-8 d-print-none">
-                                <div class="my-2">
-                                    <form action="https://formspree.io/f/meqbkzde" method="POST">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <input class="form-control" type="text" id="name" name="name" placeholder="Your Name" required="">
-                                            </div>
-                                            <div class="col-6">
-                                                <input class="form-control" type="email" id="email" name="email" placeholder="Your E-mail" required="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group my-2">
-                                            <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4" placeholder="Your Message" required=""></textarea>
-                                        </div>
-                                        <button class="btn btn-primary mt-2" type="submit">Send</button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="mt-2">
-                                    <h3 class="h6">Location</h3>
-                                    <div class="pb-2 text-secondary">London, United Kingdom</div>
-                                    <h3 class="h6">Email</h3>
-                                    <div class="pb-2 text-secondary">lorentzyeung@gmail.com</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
             </div>
         </div>
-
-<!-- ==================================================-->
-<!-- ==================================================-->
-
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container text-center px-4 px-lg-5"><a class="m-0 text-center text-white" href="https://elartedm.com" target="_blank">Last updated on 4 Sep 2023</a></div>
+            <div class="container text-center px-4 px-lg-5"><a class="m-0 text-center text-white" href="https://elartedm.com" target="_blank">Copyright &copy; El Arte Design and Marketing 2022</a></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
