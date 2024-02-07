@@ -25,7 +25,7 @@
                 transition: transform 0.3s ease, font-weight 0.3s ease; /* Add font-weight transition */
                 overflow: hidden; /* Ensures the pseudo-element does not extend outside the button */
             }
-        
+
             .vertical-btn::before {
                 content: ""; /* Required for pseudo-elements */
                 position: absolute;
@@ -37,22 +37,47 @@
                 border-radius: 5px; /* Match the button's border-radius */
                 z-index: 0; /* Ensures the overlay is behind the button text */
             }
-        
+
             .vertical-btn span {
                 position: relative; /* Makes text appear above the overlay */
                 z-index: 1;
                 transition: font-weight 0.3s ease; /* Smooth transition for font-weight */
             }
-        
+
             .vertical-btn:hover, .vertical-btn:hover span {
                 transform: scale(1.05); /* Applies scaling to the button */
                 font-weight: bold; /* Makes text bold */
                 color: white; /* Keeps text color white */
                 text-decoration: none; /* Prevents text decoration */
             }
-        
+
             .vertical-btn:last-child {
                 margin-bottom: 0;
+            }
+
+
+            <!--Chapter banner-->
+            .chapter-banner {
+                background-color: #f0f0f0; /* Light grey background */
+                color: #333; /* Dark grey text */
+                text-align: center;
+                padding: 25px 0;
+                font-size: 25px; /* Large, readable text */
+                font-weight: bold;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border-bottom: 2px solid #ddd; /* Subtle bottom border */
+                margin-bottom: 20px; /* Spacing below the banner */
+            }
+            .chapter-title {
+                /*background-color: #f0f0f0; /* Light grey background */
+                /*color: #333; /* Dark grey text */
+                font-size: 25px; /* Large, readable text */
+                font-weight: bold;
+                text-align: center;
+                padding: 25px 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                /*border-bottom: 2px solid #ddd; /* Subtle bottom border */
+                /*margin-bottom: 20px; /* Spacing below the banner */
             }
         </style>
 
@@ -88,6 +113,7 @@
                     <h1 class="font-weight-light">Lorentz Yeung</h1>
                     <p>Worked with Microsoft as Data Analyst / AI Certificate (Harvard University) / MSc in Digital Marketing / GC in Art History / Bachelor in Economics / </p>
                     <a class="btn text-white btn-dark" href='index.html'>Back To Front Page</a>
+                    <br><br>
                 </div>
                 <!-- New column for vertical buttons -->
                 <div class="col-lg-8 d-flex flex-column justify-content-between">
@@ -102,6 +128,8 @@
 <!-- ======================================== Content Rows =========================================-->
 
             <div class="row gx-4 gx-lg-5">
+                <div class="chapter-title">LLM & NLP Projects</div>
+
                 <!--============================= 3.1 =============================-->
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
@@ -127,7 +155,7 @@
                             <h2 class="card-title", id="microsoft_classification">LLM Classification Model<br></h2>
                             <p class="date">During my tenure in Microsoft</p>
                             <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/LLM_NLP_projects/msft_logo.png" alt="A classification modelling during Microsoft" /></div>
-                            <p class="card-text">The model was developed to solve client challenges, notably in managing an extensive collection of over 20,000 keywords. It integrates a classifier designed to organize these keywords effectively, enhancing marketing and sales strategies.<br>
+                            <p class="card-text">The model was developed to solve client challenges, notably in managing an extensive collection of over 20,000 keywords. The classifier was designed to organize these keywords effectively, enhancing marketing and sales strategies.<br>
                                 <strong>Skills:</strong> BERT, Python, Pandas, NLP, data wrangling.<br>
                                 </p>
                         </div>
@@ -243,7 +271,7 @@
                             Was developed and deployed for a Hong Kong-based organization named "Matters." This application is designed to enhance its performance with each use. 
                             Even after the application is shut down, the AI autonomously updates its algorithm, ensuring ongoing enhancement of its capabilities.</p>
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://www.youtube.com/shorts/vmaq4aDQhDM" target="_blank">FastAPI (Deprecated)</a></div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://www.youtube.com/shorts/vmaq4aDQhDM" target="_blank">YouTube Video Demo</a></div>
                     </div>
                 </div>
 
@@ -349,7 +377,7 @@
 
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container text-center px-4 px-lg-5"><a class="m-0 text-center text-white" href="https://elartedm.com" target="_blank">Last updated on 4 Sep 2023</a></div>
+            <div class="container text-center px-4 px-lg-5"><a class="m-0 text-center text-white" href="https://elartedm.com" target="_blank">Last updated on 4 Feb 2024</a></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

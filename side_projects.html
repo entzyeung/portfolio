@@ -25,7 +25,7 @@
                 transition: transform 0.3s ease, font-weight 0.3s ease; /* Add font-weight transition */
                 overflow: hidden; /* Ensures the pseudo-element does not extend outside the button */
             }
-        
+
             .vertical-btn::before {
                 content: ""; /* Required for pseudo-elements */
                 position: absolute;
@@ -37,22 +37,46 @@
                 border-radius: 5px; /* Match the button's border-radius */
                 z-index: 0; /* Ensures the overlay is behind the button text */
             }
-        
+
             .vertical-btn span {
                 position: relative; /* Makes text appear above the overlay */
                 z-index: 1;
                 transition: font-weight 0.3s ease; /* Smooth transition for font-weight */
             }
-        
+
             .vertical-btn:hover, .vertical-btn:hover span {
                 transform: scale(1.05); /* Applies scaling to the button */
                 font-weight: bold; /* Makes text bold */
                 color: white; /* Keeps text color white */
                 text-decoration: none; /* Prevents text decoration */
             }
-        
+
             .vertical-btn:last-child {
                 margin-bottom: 0;
+            }
+
+            <!--Chapter banner-->
+            .chapter-banner {
+                background-color: #f0f0f0; /* Light grey background */
+                color: #333; /* Dark grey text */
+                text-align: center;
+                padding: 25px 0;
+                font-size: 25px; /* Large, readable text */
+                font-weight: bold;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border-bottom: 2px solid #ddd; /* Subtle bottom border */
+                margin-bottom: 20px; /* Spacing below the banner */
+            }
+            .chapter-title {
+                /*background-color: #f0f0f0; /* Light grey background */
+                /*color: #333; /* Dark grey text */
+                font-size: 25px; /* Large, readable text */
+                font-weight: bold;
+                text-align: center;
+                padding: 25px 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                /*border-bottom: 2px solid #ddd; /* Subtle bottom border */
+                /*margin-bottom: 20px; /* Spacing below the banner */
             }
         </style>
 
@@ -78,7 +102,7 @@
             </nav>
         </header>
 
- 
+
         <!-- Page Content-->
         <div class="container px-4 px-lg-5">
             <!-- Heading Row -->
@@ -88,6 +112,7 @@
                     <h1 class="font-weight-light">Lorentz Yeung</h1>
                     <p>Worked with Microsoft as Data Analyst / AI Certificate (Harvard University) / MSc in Digital Marketing / GC in Art History / Bachelor in Economics / </p>
                     <a class="btn text-white btn-dark" href='index.html'>Back To Front Page</a>
+                    <br><br>
                 </div>
                 <!-- New column for vertical buttons -->
                 <div class="col-lg-8 d-flex flex-column justify-content-between">
@@ -102,12 +127,13 @@
 <!-- ======================================== Content Rows =========================================-->
 <!-- ======================================== Content Rows =========================================-->
             <div class="row gx-4 gx-lg-5">
+                <div class="chapter-title">Side Projects</div>
 
                 <!--============================= 3.1 =============================-->
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title">AI Certificate from Harvard University<br></h2>
+                            <h3 class="card-title">AI Certificate from Harvard University<br></h3>
                             <p class="date">May 2021</p>
                             <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/side_projects/Harvard_AI.png" alt="Harvard AI" /></div>
                             <p class="card-text">It was awarded by the HarvardX of Harvard University. Topics covered are: 
@@ -124,7 +150,7 @@
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title">Ranked 7 in a Kaggle Community Competition<br></h2>
+                            <h3 class="card-title">Ranked 7 in a Kaggle Community Competition<br></h3>
                             <p class="date">June 2022</p>
                             <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/side_projects/Kaggle.png" alt="Kaggle Competition" /></div>
                             <p class="card-text">My submission of a classification model finally ranked 7th in the competition. I have another late submission scored even higher and is on par with the first runner up. </p>
@@ -138,7 +164,7 @@
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body"> 
-                            <h2 class="card-title">Built a serverless ML model<br></h2>
+                            <h3 class="card-title">Built a serverless ML model<br></h3>
                             <p class="date">July 2022</p>
                             <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/side_projects/Buying Used Cars In A Smart Way.png" alt="Logistic Regression & Gradient Boost" /></div>
                             <p></p>
@@ -159,7 +185,7 @@
                 <div class="col-md-8 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title">Automated trade signal generation model with daily web-scraping and sentiment analysis for Algo-trade<br></h2>
+                            <h3 class="card-title">Automated trade signal generation model with daily web-scraping and sentiment analysis for Algo-trade<br></h3>
                             <p class="date">November 2021 til now</p>
                             <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/side_projects/algo-trade.png" alt="Automated Algo-trade model with daily web-scraping and sentiment analysis" /></div>
                             <p> </p>
@@ -179,7 +205,7 @@
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title">Generative Stable Diffusion model with modern UI<br></h2>
+                            <h3 class="card-title">Generative Stable Diffusion model with modern UI<br></h3>
                             <p class="date">October 2022</p>
                             <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/side_projects/ironman-Goku.png" alt="Generative model with text to image function - Iron + Goku" /></div>
                             <p> </p>
@@ -202,7 +228,7 @@
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title">Automated monthly London property price analysis<br></h2>
+                            <h3 class="card-title">Automated monthly London property price analysis<br></h3>
                             <p class="date">March 2022 til now</p>
                             <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/side_projects/London property price analysis.png" alt="london property price analysis" /></div>
                             <p> </p>
@@ -217,7 +243,6 @@
                     </div>
                 </div>
 
-
 <!-- ==================================================-->
 <!-- ==================================================-->
                 <p></p>
@@ -229,7 +254,7 @@
 
                 <div class="container">
                     <div class="contant-section" id="form">
-                        <h2 class="h3 text mb-3">Request More Info</h2>
+                        <h3 class="h3 text mb-3">Request More Info</h3>
                         <div class="row">
                             <div class="col-md-8 d-print-none">
                                 <div class="my-2">
@@ -274,7 +299,7 @@
 
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container text-center px-4 px-lg-5"><a class="m-0 text-center text-white" href="https://elartedm.com" target="_blank">Last updated on 4 Sep 2023</a></div>
+            <div class="container text-center px-4 px-lg-5"><a class="m-0 text-center text-white" href="https://elartedm.com" target="_blank">Last updated on 4 Feb 2024</a></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
