@@ -95,6 +95,16 @@
                 background-color: #333;
                 color: white;
             }
+
+            .bar-container {
+                width: 100%;
+                background-color: #f1f1f1;
+            }
+            .bar {
+                width: 1%; /* Adjust this width to represent the data values */
+                height: 18px;
+                background-color: #4CAF50;
+            }
         </style>
 
     </head>
@@ -144,7 +154,7 @@
 <!-- ======================================== Content Rows =========================================-->
 
             <div class="row gx-4 gx-lg-5">
-                <div class="chapter-title">Storage Optimisation For A Fast-Moving Fashion Company</div>
+                <div class="chapter-title" id="title">Storage Optimisation For A Fast-Moving Fashion Company</div>
 
                 <!--============================= Content =============================-->
                 <div class="col-md-12 mb-5">
@@ -152,15 +162,15 @@
                         <div class="card-body">
                             <h2 class="card-title", id="kagglex_lpi">Storage Optimisation<br></h2>
                             <p class="date text-secondary">December 2023</p>
-                            <div class="col-lg-7" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                            <div class="col-lg-12" style="display: block; margin-left: auto; margin-right: auto; width: 85%;">
                                 <img class="img-fluid rounded mb-4 mb-lg-0" src="assets/commercial_projects/storage.png" alt="storage" />
-                                <p class="text-secondary text-center">Solving storage problems with Machine Learning. Image by OpenAI.</p>
+                                <p class="text-secondary text-center">Solving storage problems with Machine Learning Modelling. Image by OpenAI.</p>
                             </div>
 
 
                             <!--============================= paragraph 1 =============================-->
                             <br><br>
-                            <h4>C-Suite Challenges: </h4>
+                            <h4 id="c_suite_challenges">C-Suite Challenges: </h4>
                             <ol>
                                 <li>Want a data driven way to reduce storage costs</li>
                                 <li>Wnat a data-led way to balance overage and underage</li>
@@ -169,7 +179,7 @@
 
                             <!--============================= paragraph 2 =============================-->
                             <br><br>
-                            <h4>I Recommended <strong>3 Solutions</strong>: </h4>
+                            <h4 id="my_recommendation">I Recommended <strong>3 Solutions</strong>: </h4>
                             <ol>
                                 <li>Implementing data-driven strategies to reduce costs by <strong>Catalogue Reduction</strong></li>
                                 <li>Utilizing analytics to max potential profit by <strong>Strategic Overstocking Approach</strong></li>
@@ -178,7 +188,7 @@
 
                             <!--============================= paragraph 3 =============================-->
                             <br><br>
-                            <h4><strong>Recommendation 1</strong> - Catalogue Reduction</h4>
+                            <h4 id="recommendation_1"><strong>Recommendation 1</strong> - Catalogue Reduction</h4>
                             <p>
                                 I first delved into the sales data of different product sub-categories, analyzing historical sales trends by implementing EDA to understand inventory dynamics.
                                 According to my EDA, I recommended to take away some of the products within 1 sub-category Sport Equipment.
@@ -239,31 +249,41 @@
                             </table>
                             <p class="text-secondary text-center">Table 1 – Sub-category, mean item price and cost, overstocking and understocking costs, and highest difference between overstocking and understocking costs. All values are in pounds (GBP).</p>
 
+
+
                             <!--============================= paragraph 4 =============================-->
                             <br><br>
-                            <h4><strong>Recommendation 2</strong> - Strategic Overstocking Approach</h4>
+                            <h4 id="recommendation_2"><strong>Recommendation 2</strong> - Strategic Overstocking Approach</h4>
                             <p>
                                 2 sub-categories were identified for strategic overestocking.<br><br>
 
                                 Maintaining these two sub-categories in inventory incurs minimal costs and could lead to substantial revenue through high-margin sales. Conversely, the rest of the sub-categories,
                                 when overstocked, result in increased costs without the same sales potential, since the financial advantage shifts negatively with unsold stock.<br><br>
                             </p>
-                        
-                        
-                        
-                        
-                        
+                            <div class="col-lg-12" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
+                                <img class="img-fluid rounded mb-4 mb-lg-0" src="assets/commercial_projects/strategic_overstocking.png" alt="storage" />
+                                <p class="text-secondary text-center">Figure 1 – Negative difference between overstocking and understocking costs for the top two sub-categories.</p>
+                            </div>
+
+
+
+                            <!--============================= paragraph 5 =============================-->
+                            <br><br>
+                            <h4 id="recommendation_3"><strong>Recommendation 3</strong> - Machine Learning Modelling</h4>
+                            <p>
+                                My core analysis revolves using the Facebook Prophet model to forecast future inventory needs. According to the model this suggested approach will save the company <Strong>94.6% stocking cost</Strong> in a year.
+                                I developed a comprehensive sales forecasting model which will forecast 365 days into the future. It was incorporated with the regions festive events, bank holidays, and marketing strategies, and thus has high predictive power.<br><br>
+
+                                My recommendation involves stocking within the lower 2.5% confidence level areas which is signified as the arrow area in figure 2.<br><br>
+                            </p>
+                            <div class="col-lg-12" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
+                                <img class="img-fluid rounded mb-4 mb-lg-0" src="assets/commercial_projects/storage_demo.png" alt="storage_demo" />
+                                <p class="text-secondary text-center">Figure 2 – stocking within the lower 2.5% confidence level area</p>
+                            </div>
+                            <br><br>
+                            <a class="btn btn-primary btn-sm" href='storage_optimisation.html#title'>Back To The Top</a>
                         </div>
 
-
-
-
-
-
-
-
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://huggingface.co/spaces/Entz/llm_5" target="_blank">Click to the deployed app</a></div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="assets/LLM_NLP_projects/kagglex_ai_course_coordinator.png" target="_blank">A snapshot of the app</a></div>
                     </div>
                 </div>
 
