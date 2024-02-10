@@ -79,6 +79,22 @@
                 /*border-bottom: 2px solid #ddd; /* Subtle bottom border */
                 /*margin-bottom: 20px; /* Spacing below the banner */
             }
+
+            .table {
+                width: 100%;
+                border-collapse: collapse;
+                }
+                table, th, td {
+                border: 1px solid black;
+                }
+                th, td {
+                padding: 8px;
+                text-align: left;
+                }
+                th {
+                background-color: #333;
+                color: white;
+            }
         </style>
 
     </head>
@@ -103,7 +119,7 @@
             </nav>
         </header>
 
- 
+
         <!-- Page Content-->
         <div class="container px-4 px-lg-5">
             <!-- Heading Row -->
@@ -124,105 +140,120 @@
             <p></p>
             <p></p>
 
-
 <!-- ======================================== Content Rows =========================================-->
 <!-- ======================================== Content Rows =========================================-->
 
-<div class="row gx-4 gx-lg-5">
-    <div class="chapter-title">Commercial Projects</div>
-    <!--============================= 3.1 =============================-->
-    <div class="col-md-4 mb-5">
-        <div class="card h-100">
-            <div class="card-body">
-                <h4 class="card-title", id="iosphere_forecast">Sales Forecast For a Fast-Moving-Fashion Online Shop<br></h4>
-                <p class="date">Nov 2023</p>
-                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/commercial_projects/forecasting.png" alt="Sales Forecast For a Fast-Moving-Fashion Online Shop" /></div>
-                <p class="card-text">It was a fast-moving-fashion online shop, and I developed a comprehensive sales forecasting model which will <strong>forecast 365 days</strong> into the future.
-                    It was incorporated with the regions festive events, bank holidays, and marketing strategies, and thus has high predictive power. In the demo is a scattered graph.
-                    The scattered dots are the actual, while the blue line is the forecast. The shadow areas are the 5% confidence interval.
-                    </p>
-            </div>
-            <div class="card-footer"><a class="btn btn-primary btn-sm" href="assets/commercial_projects/iosphere_sales_forecast_demo.png" target="_blank">A snapshot of the model</a></div>
-        </div>
-    </div>
+            <div class="row gx-4 gx-lg-5">
+                <div class="chapter-title">Storage Optimisation For A Fast-Moving Fashion Company</div>
+
+                <!--============================= Content =============================-->
+                <div class="col-md-12 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title", id="kagglex_lpi">Storage Optimisation<br></h2>
+                            <p class="date text-secondary">December 2023</p>
+                            <div class="col-lg-7" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                                <img class="img-fluid rounded mb-4 mb-lg-0" src="assets/commercial_projects/storage.png" alt="storage" />
+                                <p class="text-secondary text-center">Solving storage problems with Machine Learning. Image by OpenAI.</p>
+                            </div>
+                            <br>
 
 
-    <!--============================= 3.2 =============================-->
-    <div class="col-md-4 mb-5">
-        <div class="card h-100">
-            <div class="card-body">
-                <h4 class="card-title", id="stocking">Optimising the Storage Strategy for the Fast-Moving-Fashion Online Shop<br></h4>
-                <p class="date">Dec 2023</p>
-                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/commercial_projects/storage.png" alt="storage Strategy for Fast-Moving-Fashion Online Shop" /></div>
-                <p class="card-text">By integrating with the forecasting model, my storage efficiency analysis significantly enhanced the stocking strategy, leading to a substantial <strong>reduction in overstocking costs by 94.6%.</strong><br>
-                    In the demo graph, the red line is the suggested storage level according to the model, and the blue line below is the suggested min stocking level. <strong>Actionable insights</strong>: The PIC is recommended to keep the stock level within the vertical range.
-                </p>
-            </div>
-            <div class="card-footer"><a class="btn btn-primary btn-sm" href="storage_optimisation.html" target="_blank">Optimisation Strategy Illustration</a></div>
-            <div class="card-footer"><a class="btn btn-primary btn-sm" href="assets/commercial_projects/storage_demo.png" target="_blank">A snapshot of the insights</a></div>
-        </div>
-    </div>
+                            <!--============================= paragraph 1 =============================-->
+                            <h4>C-Suite Challenges: </h4>
+                            <ol>
+                                <li>Want a data driven way to reduce storage costs</li>
+                                <li>Wnat a data-led way to balance overage and underage</li>
+                                <li>Want to mitigate profit erosion due to volatile inventory expenses.</li>
+                            </ol>
+                            <br>
+
+                            <!--============================= paragraph 2 =============================-->
+                            <h4>I Provided 3 Recommended Solutions: </h4>
+                            <ol>
+                                <li>Implementing data-driven strategies for catalogue reduction</li>
+                                <li>Utilizing analytics to achieve inventory equilibrium</li>
+                                <li>Stabilizing fluctuating inventory costs</li>
+                            </ol>
+                            <br>
+
+                            <!--============================= paragraph 3 =============================-->
+                            <h4>Data-Driven Strategies - Exploratory Data Analysis</h4>
+                            <p>
+                                I first delved into the sales data of different product sub-categories, analyzing historical sales trends by implementing EDA to understand inventory dynamics.
+                                According to my EDA, I recommended to take away some of the products within 1 sub-category Sport Equipment.
+                                Because the potential profit from these products fail to cover the item cost and the distribution cost, thus would result in a loss (as shown as -ve in the understocking cost column).  
+                                Since the company is not making money from this products anyway. <br><br>
+
+                                As the chart is showing only a combination of sport equipments only. It needs further detailed investigations to decide which items to eliminate from the catalogue.
+                            </p>
+                            <table>
+                            <tr>
+                                <th>Sub-category</th>
+                                <th>Mean item price (£)</th>
+                                <th>Mean item cost (£)</th>
+                                <th>Overstocking cost (£)</th>
+                                <th>Understock cost (£)</th>
+                                <th>Δ (£)</th>
+                            </tr>
+                            <tr>
+                                <td>Watches</td>
+                                <td>163.32</td>
+                                <td>96.98</td>
+                                <td>102.22</td>
+                                <td>61.10</td>
+                                <td>41.12</td>
+                            </tr>
+                            <tr>
+                                <td>Electronics</td>
+                                <td>163.09</td>
+                                <td>96.32</td>
+                                <td>101.56</td>
+                                <td>61.53</td>
+                                <td>40.03</td>
+                            </tr>
+                            <tr>
+                                <td>Eyewear</td>
+                                <td>65.18</td>
+                                <td>41.54</td>
+                                <td>46.78</td>
+                                <td>18.40</td>
+                                <td>28.38</td>
+                            </tr>
+                            <tr>
+                                <td>Bags</td>
+                                <td>46.74</td>
+                                <td>24.99</td>
+                                <td>30.23</td>
+                                <td>16.51</td>
+                                <td>13.72</td>
+                            </tr>
+                            <tr>
+                                <td>Sports Equipment</td>
+                                <td>12.29</td>
+                                <td>7.46</td>
+                                <td>12.70</td>
+                                <td>-0.41</td>
+                                <td>13.11</td>
+                            </tr>
+                            </table>
+                            <p class="text-secondary text-center">Table 1 – Sub-category, mean item price and cost, overstocking and understocking costs, and highest difference between overstocking and understocking costs. All values are in pounds (GBP).</p>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://huggingface.co/spaces/Entz/llm_5" target="_blank">Click to the deployed app</a></div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="assets/LLM_NLP_projects/kagglex_ai_course_coordinator.png" target="_blank">A snapshot of the app</a></div>
+                    </div>
+                </div>
 
 
-    <!--============================= 3.3 =============================-->
-    <div class="col-md-4 mb-5">
-        <div class="card h-100">
-            <div class="card-body">
-                <h4 class="card-title", id="microsoft_classification">LLM Classification Model<br></h4>
-                <p class="date">During my tenure in Microsoft</p>
-                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/LLM_NLP_projects/msft_logo.png" alt="A classification modelling during Microsoft" /></div>
-                <p class="card-text">The model was developed to solve client challenges, notably in managing an extensive collection of over 20,000 keywords. The classifier was designed to organize these keywords effectively, enhancing marketing and sales strategies.<br>
-                    <strong>Skills:</strong> BERT, Python, Pandas, NLP, data wrangling.<br>
-                    </p>
-            </div>
-            <div class="card-footer"><a class="btn btn-primary btn-sm" href="assets/LLM_NLP_projects/msft_bert_classifier_demo.png" target="_blank">A snapshot of the classifier results</a></div>
-        </div>
-    </div>
-</div>
 
 
-<!-- Single Column Row-->
-<div class="row gx-4 gx-lg-5">
-    <!--============================= 2.1 =============================-->
-    <div class="col-md-4 mb-5">
-        <div class="card h-100">
-            <div class="card-body">
-                <h4 class="card-title", id="microsoft_forecast">Built Forecasting Models in Microsoft<br></h4>
-                <p class="date">During my tenure in Microsoft</p>
-                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/LLM_NLP_projects/msft_logo.png" alt="Built Forecasting Models in Microsoft" /></div>
-                <p></p>
-                <p class="card-text">
-                    Built forecasting models for forecasting the SRPVs, clicks, CPC, etc. I shared the experience in a world renowned data science publication after the projects.
-                </p>
-            </div>
-            <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://towardsdatascience.com/real-world-website-visitor-forecast-with-facebook-prophet-a-complete-tutorial-8d135b848c5e" target="_blank">Click to view my publication part 1</a></div>
-            <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://towardsdatascience.com/website-visitor-forecast-with-facebook-prophet-a-complete-tutorial-1d0a5bcd1f8f" target="_blank">Click to view my publication part 2</a></div>
-        </div>
-    </div>
-
-    <!--============================= 2.2 =============================-->
-    <div class="col-md-4 mb-5">
-        <div class="card h-100">
-            <div class="card-body"> 
-                <h4 class="card-title", id="merck">Sales Strategy Optimization for Merck<br></h4>
-                <p class="date">2020</p>
-                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/commercial_projects/merck.png" alt="Sales Strategy Optimization for Merck " /></div>
-                <p></p>
-                <p class="card-text">
-                    I focused on understanding my client's objectives then I proceeded with: 1] RFM analysis, <br>2] a K-means clustering model, <br>3] a classification model to classify the returning purchase date.<br><br>
-                    In the actionable insights demo, the next purchase date propensity column can be found on the left of the chart. 
-                </p>
-            </div>
-            <div class="card-footer"><a class="btn btn-primary btn-sm" href="assets/commercial_projects/merck_demo2.png" target="_blank">View the methodology</a></div>
-            <div class="card-footer"><a class="btn btn-primary btn-sm" href="assets/commercial_projects/merck_demo.png" target="_blank">A snapshot of the insights</a></div>
-        </div>
-    </div>
-
-    <!--============================= 2.3 =============================-->
 
 
-</div>
-<p> </p>
+
+
+
+
+
 
 
 <!-- ==================================================-->
@@ -236,7 +267,7 @@
 
                 <div class="container">
                     <div class="contant-section" id="form">
-                        <h4 class="h4 text mb-3">Request More Info</h4>
+                        <h2 class="h3 text mb-3">Request More Info</h2>
                         <div class="row">
                             <div class="col-md-8 d-print-none">
                                 <div class="my-2">
@@ -258,9 +289,9 @@
                             </div>
                             <div class="col">
                                 <div class="mt-2">
-                                    <h4 class="h6">Location</h4>
+                                    <h3 class="h6">Location</h3>
                                     <div class="pb-2 text-secondary">London, United Kingdom</div>
-                                    <h4 class="h6">Email</h4>
+                                    <h3 class="h6">Email</h3>
                                     <div class="pb-2 text-secondary">lorentzyeung@gmail.com</div>
                                 </div>
                             </div>
