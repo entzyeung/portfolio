@@ -1,4 +1,4 @@
-# Lorentz Yeung's Portfolio
+# [Lorentz Yeung's Portfolio](https://entzyeung.github.io/portfolio/side_projects.html)
 
 Welcome to my portfolio! This repository hosts the code for my personal portfolio website, showcasing my skills, projects, and accomplishments across various domains, including data science, machine learning, and natural language processing (NLP).
 
