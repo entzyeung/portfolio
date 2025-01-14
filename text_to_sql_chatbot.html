@@ -107,7 +107,7 @@
             }
         </style>
 
-    </head>
+</head>
 <!-- ==================================================-->
 <!-- ==================================================-->
     <body>
@@ -166,28 +166,96 @@
                                 <img class="img-fluid rounded mb-4 mb-lg-0" src="assets/LLM_NLP_projects/calldataai.png" alt="storage" />
                                 <p class="text-secondary text-center">Intensify the data driven culture in the Richmond and Wandsworth Council. Image by OpenAI.</p>
                             </div>
+                            <p>
+                                This is a Proof-of-Concept AI-powered application for analyzing my council’s Call Center data. Combining FastAPI, Streamlit, and LLMs, this app is designed for performance, transparency, and cost-efficiency.
+                            </p>
 
-
-                            <!--============================= paragraph 1 =============================-->
-                            <br><br>
-                            <h4 id="c_suite_challenges">C-Suite Challenges: </h4>
+                            <br>
+                            <h4>🌟 Key Features:</h4>
                             <ol>
-                                <li>Require insights from data-led tools to balance resource allocation and optimize staffing efficiency.</li> 
-                                <li>Aim to optimise the process of getting intelligence but reducing the workload of the current data scientist team at the same time.</li> 
-                                <li>Seek an AI-driven approach to streamline data analysis and reduce operational costs for call center management.</li> 
+                                <li><strong>Natural Language Query Parsing</strong><br>
+                                    • Input plain English questions like “What’s the average time to close requests per category?”.<br>
+                                    • Automatically converts the query into optimized SQL or Pandas code.<br>
+                                    • Executes the query in real time, fetching precise results without expensive agentic looping.
+                                </li>
+                                <li><strong>FastAPI for Backend Excellence</strong><br>
+                                    • No database data is ever read by the AI – all queries are processed and executed locally for full data security.<br>
+                                    • Ensures fast execution without relying on slow or costly AI-driven agentic methods.<br>
+                                    • Provides full transparency – no black-box operations; you see exactly how your data is processed.
+                                </li>
+                                <li><strong>Streamlit Frontend for Intuitive Interaction</strong><br>
+                                    • Clean, user-friendly UI built with Streamlit, enabling effortless interaction with data.<br>
+                                    • Predefined queries for common tasks (e.g., “List all unresolved calls”).<br>
+                                    • Real-time display of query results – scalar values, tabular data, or JSON.
+                                </li>
+                                <li><strong>Gemini AI for LLM-Powered Queries</strong><br>
+                                    • Uses Google Gemini AI (1.5 Pro) to convert natural language questions into highly accurate SQL or Pandas queries.<br>
+                                    • Avoids unnecessary complexity by focusing solely on query generation, keeping the process simple and efficient.
+                                </li>
+                                <li><strong>Lightweight and Scalable with Docker</strong><br>
+                                    • Fully Dockerized for deployment anywhere – from local environments to Hugging Face Spaces (a cloud platform).<br>
+                                    • Possibly it is likely being planned to deploy it to Azure using their services, such as Azure App Service, Azure Kubernetes Service (AKS), or Azure Container Instances (ACI).
+                                </li>
+                                <li><strong>Secure Environment Management</strong><br>
+                                    • Sensitive API keys (e.g., OpenAI API, Google Gemini API Key) are managed securely using environment variables (e.g. Azure's Key Vault), ensuring safe deployment.
+                                </li>
                             </ol>
 
-                            <!--============================= paragraph 2 =============================-->
-                            <br><br>
-                            <h4 id="solution_overview">My Solutions/Chatbot Overview: </h4>
+                            <br>
+                            <h4>Technical Stack:</h4>
+                            <ul>
+                                <li>FastAPI: High-performance backend for query processing and external API integration.</li>
+                                <li>Streamlit: Dynamic, responsive frontend that makes interacting with the app a breeze.</li>
+                                <li>Google Gemini AI: Converts natural language inputs into precise SQL and Pandas queries.</li>
+                                <li>SQLite/Pandas: Executes queries on structured and tabular data with ease.</li>
+                                <li>Docker: Ensures portability and scalability with containerized deployments.</li>
+                            </ul>
+
+                            <br>
+                            <h4>How It Works:</h4>
                             <ol>
-                                <li>Data Integration: The AI chatbot, powered by AI, seamlessly integrates NetCall data from multiple sources (Azure Databricks, SQL, etc; liteSQL and CSV in the demo) into a unified platform for real-time analysis and reporting.</li> 
-                                <li>Natural Language Querying: Empowers users to ask questions in plain English and receive instant insights through AI-generated SQL queries or Pandas-based analysis, removing the need for technical expertise in querying.</li> 
-                                <li>Actionable Insights: Provides real-time analytics, such as average time (days) to close a request per call request category, enables data-driven decision-making to optimize operations.</li> 
-                                <li>Cost Optimization: Executes queries without resorting to agentic actions.</li>
-                                <li>Transparent results: queries and insights are all visible and transparent. Avoids the black-box processes in agentic architecture.</li> 
-                                <li>Scalable and Secure: Built on a scalable architecture leveraging Azure’s cloud ecosystem, ensuring secure, high-performance access to data and insights.</li> 
+                                <li><strong>Ask:</strong> Input queries like “How many requests are unresolved?” or “Show the top request categories.”</li>
+                                <li><strong>Process:</strong> FastAPI and AI handle the query conversion in real time.</li>
+                                <li><strong>Execute:</strong> SQL or Pandas runs the query, ensuring secure and efficient execution.</li>
+                                <li><strong>Analyze:</strong> Results are instantly displayed on the Streamlit UI – no delays, no guesswork.</li>
                             </ol>
+
+                            <br>
+                            <h4>🌟 Why CallDataAI Stands Out</h4>
+                            <ol>
+                                <li><strong>No Database Data is Sent to AI</strong><br>
+                                    • Unlike many agentic or black-box solutions, CallDataAI ensures that sensitive database data remains local.<br>
+                                    • The AI (Google’s Gemini) only receives natural language input and returns the corresponding SQL/Pandas query – no raw or processed data ever leaves your environment.
+                                </li>
+                                <li><strong>Fast and Efficient Execution</strong><br>
+                                    • The FastAPI backend will execute database queries directly to Azure datalate, ensuring low latency and lightning-fast results.<br>
+                                    • No agentic looping or trial-and-error query generation – the system generates and executes the query in one clean pass.
+                                </li>
+                                <li><strong>No Expensive Agentic Dependencies</strong><br>
+                                    • Many AI-driven systems rely on costly agentic frameworks that iterate unnecessarily. CallDataAI is streamlined, reducing costs and enhancing performance.
+                                </li>
+                                <li><strong>Explainable, Not a Black Box</strong><br>
+                                    • All generated queries are fully visible to the user, ensuring transparency and trust.<br>
+                                    • No ambiguous "magic" – users can review, validate, and refine their queries for complete control over their analysis if the user has technical background.
+                                </li>
+                                <li><strong>Built for Real-World Applications</strong><br>
+                                    • Designed with data security, scalability, usability, and budget optimisation in mind, CallDataAI is perfect for handling sensitive government data and beyond.
+                                </li>
+                            </ol>
+
+                            <br>
+                            <h4>Why It Matters</h4>
+                            <p>
+                                This project demonstrates how AI Engineering principles can make data analysis smarter and more secure:
+                            </p>
+                            <ul>
+                                <li>No external data sharing ensures compliance with sensitive data requirements.</li>
+                                <li>Fast and efficient query generation minimizes runtime costs while maximizing productivity.</li>
+                                <li>Transparency in generated code fosters trust and allows full user control.</li>
+                            </ul>
+                            <p>
+                                Whether you’re a government analyst, data professional, or AI enthusiast, CallDataAI bridges the gap between natural language understanding and data operations, making data insights more accessible to non technical executive-level managers.
+                            </p>
 
                             <div class="link" style="text-align: center; margin-top: 20px;">
                                 <a href="https://huggingface.co/spaces/Entz/council_2" target="_blank">
@@ -199,13 +267,15 @@
                             </div>
                             <p id="final_reminder">Please be kindly reminded that this is only an app for demo purpose only in the prototype stage. The final product may vary from the demo.</p>
 
-                            <!--============================= paragraph 5 =============================-->
                             <br><br>
                             <a class="btn btn-primary btn-sm" href='text_to_sql_chatbot.html'>Back To The Top</a>
                         </div>
-
                     </div>
                 </div>
+            </div>
+        </div>
+    </body>
+
 
 
 
